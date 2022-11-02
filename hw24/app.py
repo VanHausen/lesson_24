@@ -6,7 +6,6 @@ from flask import Flask, request, Response
 from werkzeug.exceptions import BadRequest
 
 app = Flask(__name__)
-
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(BASE_DIR, "data")
 
