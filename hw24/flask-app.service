@@ -1,0 +1,12 @@
+[Unit]
+Description=Flask app service
+After=network.target
+
+[Service]
+WorkingDirectory=E:\IT\SKYPRO_Python_Developer\home_works\lesson_24
+Environment=FLASK_APP=run.py
+ExecStart=E:\IT\SKYPRO_Python_Developer\home_works\lesson_24\venv\bin\python -m flask run -h 0.0.0.0 -p 25000
+
+[Install]
+WantedBy=multi-user.target
+
